@@ -524,3 +524,30 @@
             font-size: 18px;
             font-weight: 600;
         }
+
+
+        @media (max-width: 1400px) {
+            .right-sidebar {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .staking-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+            
+            .staking-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
